@@ -1,0 +1,33 @@
+# Site Information
+# -----------------------------------------------------------------------------
+
+title:        "Benjamin Basa"
+tagline:      "B_Basa - Version 2.0"
+
+# Update this entry when a new version rolls-out to inform users that their
+# UI-Kit might break when upgraded to a newer version.
+version:       0.0.0
+
+# Formats
+# -----------------------------------------------------------------------------
+
+markdown:     kramdown
+permalink:    pretty
+highlighter:  pygments
+paginate:     5
+
+
+# Build Info
+# -----------------------------------------------------------------------------
+
+# source to compile
+source:       application
+
+# Include/Exclude
+include:      ['.htaccess']
+exclude:      ['.gitignore', '*.sass-cache', 'scss', '*.txt', '*.rb', '*.sh', 'Gruntfile.js', 'package.json', 'node_modules', 'dist', 'bower_components']
+
+# Server
+port:         4002
+baseurl:      /
+destination:  _gh_pages
