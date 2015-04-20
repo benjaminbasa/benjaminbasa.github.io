@@ -1,16 +1,13 @@
 header {
-  height: 100%;
   padding: 0;
   display: table;
+  height: 100%;
   width: 100%;
-  height: auto;
-  padding: 100px 0;
   text-align: center;
   color: #fff;
   background: url('/assets/img/header/bg.jpg') no-repeat bottom center scroll;
   background-color: #000;
   .background-size(cover);
-
 
   .author-details {
     margin: 30px 0 100px 0;
@@ -39,10 +36,8 @@ header {
 }
 
 
-
-@media (min-width: 768px) {
+@media (min-width: @screen-sm-min) {
   header {
-    height: 100%;
-    padding: 0;
+    padding: 50px 0;
   }
 }

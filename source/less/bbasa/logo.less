@@ -1,12 +1,14 @@
 path {
   fill: #fff;
 }
+
 .elem-container {
   display: inline-block;
   position: absolute;
-  -webkit-animation: ellipse 8s linear infinite;
+ .animation(ellipse 8s linear infinite);
   height: 330px;
   width: 330px;
+
   .arm-1 {
     position: absolute;
     top: -115px;
@@ -15,6 +17,7 @@ path {
       height: 120px;
     }
   }
+
   .arm-2 {
     position: absolute;
     bottom: -133px;
@@ -23,8 +26,9 @@ path {
       height: 110px;
     }
   }
+
   &.counter {
-    -webkit-animation: counter-ellipse 15s linear infinite;
+    .animation(counter-ellipse 15s linear infinite);
     .arm-1 {
       position: absolute;
       top: -133px;
@@ -34,8 +38,9 @@ path {
       }
     }
   }
+
   &.shrink {
-    -webkit-animation: shrink-ellipse 10s linear infinite;
+    .animation(shrink-ellipse 10s linear infinite);
     .arm-1 {
       position: absolute;
       top: -100px;
@@ -50,8 +55,9 @@ path {
       left: 160px;
     }
   }
+
   &.semi-circle {
-    -webkit-animation: semi-circle-ellipse 20s linear infinite;
+    .animation(semi-circle-ellipse 20s linear infinite);
     .arm-semi-circle-1 {
       position: absolute;
       bottom: -75px;
@@ -71,13 +77,16 @@ path {
       }
     }
   }
+
 }
+
+
+
+
 #bb_logo {
   display: inline-block;
   margin-left: auto;
-  margin-right: auto;
-  /* width: auto; */
-  
+  margin-right: auto;  
   padding: 50px 50px 45px 50px;
   border: solid 15px #fff;
   border-radius: 50%;
@@ -87,67 +96,292 @@ path {
     left: 0;
   }
 }
+
+/* WEBKIT KEYFRAMES - Start */
+
 @-webkit-keyframes ellipse {
   0% {
-    transform: rotate(0);
+    .transform(rotate(0));
   }
   50% {
-    transform: rotate(180deg);
+    .transform(rotate(180deg));
   }
   65% {
-    transform: rotate(140deg);
+    .transform(rotate(140deg));
   }
   80% {
-    transform: rotate(280deg);
+    .transform(rotate(280deg));
   }
   100% {
-    transform: rotate(360deg);
+    .transform(rotate(360deg));
   }
 }
+
 @-webkit-keyframes counter-ellipse {
   0% {
-    transform: rotate(90deg) scale(.9);
+    .transform(rotate(90deg) scale(.9));
     opacity: .3;
   }
   50% {
-    transform: rotate(240deg) scale(.9);
+    .transform(rotate(240deg) scale(.9));
   }
   100% {
-    transform: rotate(360deg) scale(.9);
+    .transform(rotate(360deg) scale(.9));
     opacity: .3;
   }
 }
+
 @-webkit-keyframes shrink-ellipse {
   0% {
-    transform: rotate(0);
+    .transform(rotate(0));
   }
   25% {
-    transform: rotate(240deg);
+    .transform(rotate(240deg));
   }
   50% {
-    transform: rotate(300deg);
+    .transform(rotate(300deg));
   }
   100% {
-    transform: rotate(90deg);
+    .transform(rotate(90deg));
   }
 }
+
 @-webkit-keyframes semi-circle-ellipse {
   0% {
-    transform: rotate(360deg);
+    .transform(rotate(360deg));
   }
   20% {
-    transform: rotate(250deg);
+    .transform(rotate(250deg));
   }
   50% {
-    transform: rotate(360deg);
+    .transform(rotate(360deg));
   }
   60% {
-    transform: rotate(200deg);
+    .transform(rotate(200deg));
   }
   80% {
-    transform: rotate(180deg);
+    .transform(rotate(180deg));
   }
   100% {
-    transform: rotate(0);
+    .transform(rotate(0));
   }
 }
+
+/* WEBKIT KEYFRAMES - End */
+
+
+/* MOZILLA KEYFRAMES - Start */
+
+@-moz-keyframes ellipse {
+  0% {
+    .transform(rotate(0));
+  }
+  50% {
+    .transform(rotate(180deg));
+  }
+  65% {
+    .transform(rotate(140deg));
+  }
+  80% {
+    .transform(rotate(280deg));
+  }
+  100% {
+    .transform(rotate(360deg));
+  }
+}
+
+@-moz-keyframes counter-ellipse {
+  0% {
+    .transform(rotate(90deg) scale(.9));
+    opacity: .3;
+  }
+  50% {
+    .transform(rotate(240deg) scale(.9));
+  }
+  100% {
+    .transform(rotate(360deg) scale(.9));
+    opacity: .3;
+  }
+}
+
+@-moz-keyframes shrink-ellipse {
+  0% {
+    .transform(rotate(0));
+  }
+  25% {
+    .transform(rotate(240deg));
+  }
+  50% {
+    .transform(rotate(300deg));
+  }
+  100% {
+    .transform(rotate(90deg));
+  }
+}
+
+@-moz-keyframes semi-circle-ellipse {
+  0% {
+    .transform(rotate(360deg));
+  }
+  20% {
+    .transform(rotate(250deg));
+  }
+  50% {
+    .transform(rotate(360deg));
+  }
+  60% {
+    .transform(rotate(200deg));
+  }
+  80% {
+    .transform(rotate(180deg));
+  }
+  100% {
+    .transform(rotate(0));
+  }
+}
+
+/* MOZILLA KEYFRAMES - End */
+
+/* OPERA - Start */
+
+@keyframes ellipse {
+  0% {
+    .transform(rotate(0));
+  }
+  50% {
+    .transform(rotate(180deg));
+  }
+  65% {
+    .transform(rotate(140deg));
+  }
+  80% {
+    .transform(rotate(280deg));
+  }
+  100% {
+    .transform(rotate(360deg));
+  }
+}
+
+@-o-keyframes counter-ellipse {
+  0% {
+    .transform(rotate(90deg) scale(.9));
+    opacity: .3;
+  }
+  50% {
+    .transform(rotate(240deg) scale(.9));
+  }
+  100% {
+    .transform(rotate(360deg) scale(.9));
+    opacity: .3;
+  }
+}
+
+@-o-keyframes shrink-ellipse {
+  0% {
+    .transform(rotate(0));
+  }
+  25% {
+    .transform(rotate(240deg));
+  }
+  50% {
+    .transform(rotate(300deg));
+  }
+  100% {
+    .transform(rotate(90deg));
+  }
+}
+
+@-o-keyframes semi-circle-ellipse {
+  0% {
+    .transform(rotate(360deg));
+  }
+  20% {
+    .transform(rotate(250deg));
+  }
+  50% {
+    .transform(rotate(360deg));
+  }
+  60% {
+    .transform(rotate(200deg));
+  }
+  80% {
+    .transform(rotate(180deg));
+  }
+  100% {
+    .transform(rotate(0));
+  }
+}
+
+/* OPERA KEYFRAMES - End */
+
+/* KEYFRAMES - Start */
+
+@keyframes ellipse {
+  0% {
+    .transform(rotate(0));
+  }
+  50% {
+    .transform(rotate(180deg));
+  }
+  65% {
+    .transform(rotate(140deg));
+  }
+  80% {
+    .transform(rotate(280deg));
+  }
+  100% {
+    .transform(rotate(360deg));
+  }
+}
+
+@keyframes counter-ellipse {
+  0% {
+    .transform(rotate(90deg) scale(.9));
+    opacity: .3;
+  }
+  50% {
+    .transform(rotate(240deg) scale(.9));
+  }
+  100% {
+    .transform(rotate(360deg) scale(.9));
+    opacity: .3;
+  }
+}
+
+@keyframes shrink-ellipse {
+  0% {
+    .transform(rotate(0));
+  }
+  25% {
+    .transform(rotate(240deg));
+  }
+  50% {
+    .transform(rotate(300deg));
+  }
+  100% {
+    .transform(rotate(90deg));
+  }
+}
+
+@keyframes semi-circle-ellipse {
+  0% {
+    .transform(rotate(360deg));
+  }
+  20% {
+    .transform(rotate(250deg));
+  }
+  50% {
+    .transform(rotate(360deg));
+  }
+  60% {
+    .transform(rotate(200deg));
+  }
+  80% {
+    .transform(rotate(180deg));
+  }
+  100% {
+    .transform(rotate(0));
+  }
+}
+
+/* KEYFRAMES - End */
